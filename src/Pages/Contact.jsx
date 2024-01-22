@@ -8,7 +8,10 @@ const Contact = () => {
             <Navbar />
             <main className="contactForm">
                 <header>
-                    <h1>Kontak</h1>
+                    <div>
+                        <h1>Ini Halaman Kontak</h1>
+                    </div>
+
                 </header>
                 <ContactForm />
             </main>
