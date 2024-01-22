@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Beranda from "./Pages/Beranda";
+import Tentang from "./Pages/Tentang";
+import PendaftaranTTE from "./Pages/PendaftaranTTE";
+import PengajuanVulAssess from "./Pages/PengajuanVulAssess";
+import PengajuanMail from "./Pages/PengajuanMail";
+import PengajuanIntegrasiAPITTE from "./Pages/PengajuanIntegrasiAPITTE";
+import Contact from "./Pages/Contact";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Beranda />} />
+          <Route path="/tentang" element={<Tentang />} />
+          <Route
+            path="/Pendaftaran-TTE-(E-Sign)"
+            element={<PendaftaranTTE />}
+          />
+          <Route
+            path="/Pengajuan-Vulnerability-Assessment"
+            element={<PengajuanVulAssess />}
+          />
+          <Route path="/Pengajuan-Mail-Bogorkab" element={<PengajuanMail />} />
+          <Route
+            path="/Pengajuan-Integrasi-API-TTE"
+            element={<PengajuanIntegrasiAPITTE />}
+          />
+          <Route path="/Contact" element={<Contact />} />
+        </Routes>
+      </Router>
     </div>
   );
-}
+};
 
 export default App;
