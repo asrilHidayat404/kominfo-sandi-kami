@@ -1,15 +1,11 @@
-import FormPendaftaranTTE from "../Components/FormPendaftaranTTE"
-import Navbar from "../Components/Navbar"
-import "../Css/App.css"
-import Footer from "../Components/Footer"
+import LandingPageTTE from "../Components/LandingPageTTE"
 
 const PendaftaranTTE = () => {
+
     return (
-        <div className="container">
-            <Navbar />
-            <FormPendaftaranTTE />
-            <Footer />
-        </div>
+        <section id="TTE">
+            <LandingPageTTE />
+        </section>
     )
 }
 

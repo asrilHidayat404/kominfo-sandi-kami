@@ -1,19 +1,17 @@
-import Character from "../Components/Character"
 import Contact from "../Components/Contact"
 import Footer from "../Components/Footer"
 import Hero from "../Components/Hero"
+import Layanan from "../Components/Layanan"
 import Navbar from "../Components/Navbar"
-import Partners from "../Components/Partners"
-import Reason from "../Components/Reason"
-import "../Css/App.css"
+import Tentang from "../Components/Tentang"
+
 const Beranda = () => {
     return (
         <div className="container">
             <Navbar />
             <Hero />
-            <Partners />
-            <Reason />
-            <Character />
+            <Tentang />
+            <Layanan />
             <Contact />
             <Footer />
         </div>
